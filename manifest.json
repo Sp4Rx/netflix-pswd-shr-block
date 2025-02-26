@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Netflix Blocker Remover",
+    "version": "1.0",
+    "description": "Removes the full-screen blocker and enables video controls on Netflix.",
+    "content_scripts": [
+      {
+        "matches": ["*://*.netflix.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": ["activeTab"]
+  }
+  
